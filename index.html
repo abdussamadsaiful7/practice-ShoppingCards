@@ -10,7 +10,7 @@
 </head>
 <body>
     <header>
-        <div class="navbar bg-base-100 shadow-2xl lg:px-12">
+        <div class="navbar bg-base-100 shadow-2xl">
             <div class="flex-1">
               <a class="btn btn-ghost normal-case text-xl">daisyUI</a>
             </div>
@@ -39,8 +39,8 @@
           </div>
     </header>
     <main>
-        <section>
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 w-[60%] gap-5 lg:px-12">
+        <section class=" lg:px-12 flex flex-col md:flex-row lg:flex-row">
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 w-[70%] gap-5 lg:px-12">
                 <div class="products-details mt-5">
                     <div class="card card-compact w-full bg-base-100 shadow-xl">
                         <figure><img class="w-full h-40" src="img/coffee.jpg" alt="Shoes" /></figure>
@@ -101,11 +101,12 @@
                     <div class="card card-compact w-full bg-base-100 shadow-xl">
                         <figure><img class="w-full h-40" src="img/vue-js.jpg" alt="Shoes" /></figure>
                         <div class="card-body">
-                          <h2 class="card-title">Umbrella!</h2>
-                          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime, quibusdam. Molestiae esse omnis accusamus aperiam</p>
+                          <h2 class="card-title">Vue.js!</h2>
+                          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime  Maxime,quibusdam.Molest</p>
                           <!-- <p>Price: $<span>400</span></p>
                           <p>Quantity: <span>3</span></p> -->
-                          <input type="text" placeholder="Type here" class="input input-bordered input-sm w-full max-w-xs" />
+                          <input type="text" placeholder="price" class="input input-bordered input-sm w-full max-w-xs" />
+                          <input type="text" placeholder="Quantity" class="input input-bordered input-sm w-full max-w-xs" />
                           <div class="card-actions justify-end">
                             <button class="btn btn-primary">Add to Cards</button>
                           </div>
@@ -113,8 +114,24 @@
                     </div>
                 </div>
             </div>
-            <div class="card-details">
-
+            <div class="card-details mt-5 w-[25%] mx-auto w-full md:w-[30%] lg: w-[40%] mx-auto;">
+                <h1 class="text-3xl text-center font-bold underline">Total Products: $<span>00</span></h1>
+                <div class="overflow-x-auto">
+                    <table class="table w-full mt-5">
+                      <!-- head -->
+                      <thead>
+                        <tr>
+                          <th></th>
+                          <th>Name</th>
+                          <th>Job</th>
+                          <th>Price</th>
+                          <th>Total</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                      </tbody>
+                    </table>
+                  </div>
             </div>
         </section>
     </main>
