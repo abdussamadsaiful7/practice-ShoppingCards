@@ -10,6 +10,7 @@ document.getElementById('first-card').addEventListener('click', function(){
 
 //show the data
    displayData(productName, productPrice, productQuantity, totalPrice);
+   document.getElementById('first-card').setAttribute('disabled', true);
 }); 
 
 
@@ -22,6 +23,7 @@ document.getElementById('second-card').addEventListener('click', function(event)
     serial += 1;
 
     displayData(pName, pPrice, pQuantity, sumTotal);
+    document.getElementById('second-card').setAttribute('disabled', true);
 
 });
  
@@ -37,6 +39,7 @@ document.getElementById('third-card').addEventListener('click', function(){
    
  //show the data,
     displayData(productName, productPrice, productQuantity, totalPrice);
+    document.getElementById('third-card').setAttribute('disabled', true);
 }); 
 
 
@@ -51,6 +54,7 @@ document.getElementById('fourth-card').addEventListener('click', function(){
 
 //show the data,
     displayData(productName, productPrice, productQuantity, totalPrice);
+    document.getElementById('fourth-card').setAttribute('disabled', true);
 });
 
 
@@ -59,10 +63,11 @@ document.getElementById('fifth-card').addEventListener('click', function(){
     const productName = document.getElementById('fifth-name').innerText;
     const productPrice = document.getElementById('fifth-field-price').value;
     const productQuantity = document.getElementById('fifth-field-quantity').value;
-
     const total = parseFloat(productPrice) / parseFloat(productQuantity);
+    serial += 1;
 
     displayData(productName, productPrice, productQuantity, total);
+    document.getElementById('fifth-card').setAttribute('disabled', true);
 
 });
 
@@ -72,10 +77,11 @@ document.getElementById('sixth-card').addEventListener('click', function(){
     const productName = document.getElementById('sixth-name').innerText;
     const productPrice = document.getElementById('sixth-field-price').value;
     const productQuantity = document.getElementById('sixth-field-quantity').value;
-
     const total = parseFloat(productPrice) * parseFloat(productQuantity);
+    serial += 1;
 
     displayData(productName, productPrice, productQuantity, total);
+    document.getElementById('sixth-card').setAttribute('disabled', true);
 
 });
 
