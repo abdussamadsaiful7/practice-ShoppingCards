@@ -21,7 +21,7 @@
               <div class="dropdown dropdown-end">
                 <label tabindex="0" class="btn btn-ghost btn-circle avatar">
                   <div class="w-10 rounded-full">
-                    <img src="download.jpg" />
+                    <img src="img/download.jpg" />
                   </div>
                 </label>
                 <ul tabindex="0" class="mt-3 p-2 shadow menu menu-compact dropdown-content bg-base-100 rounded-md w-52">
@@ -45,12 +45,12 @@
                     <div class="card card-compact w-full bg-base-100 shadow-xl">
                         <figure><img class="w-full h-40" src="img/coffee.jpg" alt="Shoes" /></figure>
                         <div class="card-body">
-                          <h2 class="card-title">Coffee!</h2>
+                          <h2 id="first-name" class="card-title">Coffee!</h2>
                           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime, quibusdam. Molestiae esse omnis accusamus aperiam</p>
-                          <p>Price: $<span>110</span></p>
-                          <p>Quantity: <span>5</span></p>
+                          <p>Price: $<span id="first-price">110</span></p>
+                          <p>Quantity: <span id="first-quantity">5</span></p>
                           <div class="card-actions justify-end">
-                            <button class="btn btn-primary">Add to Cards</button>
+                            <button id="first-card" class="btn btn-primary">Add to Cards</button>
                           </div>
                         </div>
                     </div>
@@ -102,7 +102,7 @@
                         <figure><img class="w-full h-40" src="img/vue-js.jpg" alt="Shoes" /></figure>
                         <div class="card-body">
                           <h2 class="card-title">Vue.js!</h2>
-                          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime  Maxime,quibusdam.Molest</p>
+                          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime Maxime,quibusdam.Molest</p>
                           <!-- <p>Price: $<span>400</span></p>
                           <p>Quantity: <span>3</span></p> -->
                           <input type="text" placeholder="price" class="input input-bordered input-sm w-full max-w-xs" />
@@ -115,20 +115,23 @@
                 </div>
             </div>
             <div class="card-details mt-5 w-[25%] mx-auto w-full md:w-[30%] lg: w-[40%] mx-auto;">
-                <h1 class="text-3xl text-center font-bold underline">Total Products: $<span>00</span></h1>
-                <div class="overflow-x-auto">
+                <h1 class="text-3xl text-center font-bold underline">Total Products™: <span>00</span></h1>
+                <!-- overflow-x-auto for box set -->
+                <div class="">
                     <table class="table w-full mt-5">
                       <!-- head -->
                       <thead>
                         <tr>
-                          <th></th>
+                          <th>No</th>
                           <th>Name</th>
-                          <th>Job</th>
                           <th>Price</th>
+                          <th>Quantity</th>
                           <th>Total</th>
                         </tr>
                       </thead>
-                      <tbody>
+                      <tbody id="table-container">
+
+
                       </tbody>
                     </table>
                   </div>
