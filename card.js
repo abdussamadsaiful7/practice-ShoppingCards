@@ -31,16 +31,51 @@ document.getElementById('third-card').addEventListener('click', function(){
     const productName = document.getElementById('third-name').innerText;
     const productPrice = document.getElementById('third-price').innerText;
     const productQuantity = document.getElementById('third-quantity').innerText;
-    const totalPrice = parseFloat(productPrice) * parseFloat( productQuantity);
+
+    const totalPrice = parseFloat(productPrice) - parseFloat( productQuantity);
     serial += 1;
- 
- //show the data
+   
+ //show the data,
     displayData(productName, productPrice, productQuantity, totalPrice);
 }); 
 
 
+//4th card,
+document.getElementById('fourth-card').addEventListener('click', function(){
+    const productName = document.getElementById('fourth-name').innerText;
+    const productPrice = document.getElementById('fourth-price').innerText;
+    const productQuantity = document.getElementById('fourth-quantity').innerText;
+
+    const totalPrice = parseFloat(productPrice) * parseFloat( productQuantity);
+    serial += 1;
+
+//show the data,
+    displayData(productName, productPrice, productQuantity, totalPrice);
+});
 
 
+//last card,
+document.getElementById('fifth-card').addEventListener('click', function(){
+    const productName = document.getElementById('fifth-name').innerText;
+    const productPrice = document.getElementById('fifth-field-price').value;
+    const productQuantity = document.getElementById('fifth-field-quantity').value;
+
+    const total = parseFloat(productPrice) / parseFloat(productQuantity);
+
+    displayData(productName, productPrice, productQuantity, total);
+
+});
+
+
+
+
+
+// //common function display 
+// function getAllData(){
+//     const productName = document.getElementById('third-name').innerText;
+//     const productPrice = document.getElementById('third-price').innerText;
+//     const productQuantity = document.getElementById('third-quantity').innerText;
+// };
 
 //common function,
 function displayData(pName, pPrice, pQuantity, sumTotal){
