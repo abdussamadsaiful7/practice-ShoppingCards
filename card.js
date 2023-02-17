@@ -54,13 +54,26 @@ document.getElementById('fourth-card').addEventListener('click', function(){
 });
 
 
-//last card,
+//fifth card,
 document.getElementById('fifth-card').addEventListener('click', function(){
     const productName = document.getElementById('fifth-name').innerText;
     const productPrice = document.getElementById('fifth-field-price').value;
     const productQuantity = document.getElementById('fifth-field-quantity').value;
 
     const total = parseFloat(productPrice) / parseFloat(productQuantity);
+
+    displayData(productName, productPrice, productQuantity, total);
+
+});
+
+
+//sixth card,
+document.getElementById('sixth-card').addEventListener('click', function(){
+    const productName = document.getElementById('sixth-name').innerText;
+    const productPrice = document.getElementById('sixth-field-price').value;
+    const productQuantity = document.getElementById('sixth-field-quantity').value;
+
+    const total = parseFloat(productPrice) * parseFloat(productQuantity);
 
     displayData(productName, productPrice, productQuantity, total);
 
